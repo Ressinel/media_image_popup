@@ -1,0 +1,12 @@
+media_image_popup.media_image_popup_render:
+  path: '/media_image_popup/render/{fid}/{image_style}'
+  defaults:
+    _controller: '\Drupal\media_image_popup\Controller\MediaImagePopup::render'
+  requirements:
+    _permission: 'access content'
+media_image_popup.media_image_popup_render_original:
+  path: '/media_image_popup/render/{fid}'
+  defaults:
+    _controller: '\Drupal\media_image_popup\Controller\MediaImagePopup::render'
+  requirements:
+    _permission: 'access content'
